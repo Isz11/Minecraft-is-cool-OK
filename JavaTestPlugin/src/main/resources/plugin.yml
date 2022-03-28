@@ -1,0 +1,6 @@
+name: JavaTest
+version: '${project.version}'
+main: me.isz.javatest.JavaTest
+api-version: 1.18
+authors: [ Isz ]
+description: plugin for testing purposes
