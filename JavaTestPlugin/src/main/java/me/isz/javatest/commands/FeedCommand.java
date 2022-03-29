@@ -16,7 +16,7 @@ public class FeedCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
         String feed_allow = plugin.getConfig().getString("feed");
-        String feed_deny = plugin.getConfig().getString("feed");
+        String feed_deny = plugin.getConfig().getString("feed_no_permission");
 
         if (sender instanceof Player) {
             Player p = (Player) sender;
