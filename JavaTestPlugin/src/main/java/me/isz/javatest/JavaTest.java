@@ -1,11 +1,11 @@
 package me.isz.javatest;
 
+import me.isz.javatest.commands.FeedCommand;
+import me.isz.javatest.commands.GodCommand;
 import me.isz.javatest.listeners.JoinLeaveListener;
 import me.isz.javatest.listeners.ShearSheepListener;
 import me.isz.javatest.listeners.XPBottleBreakListener;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class JavaTest extends JavaPlugin implements Listener {
@@ -18,6 +18,12 @@ public final class JavaTest extends JavaPlugin implements Listener {
         getServer().getPluginManager().registerEvents(new XPBottleBreakListener(), this);
         getServer().getPluginManager().registerEvents(new ShearSheepListener(), this);
         getServer().getPluginManager().registerEvents(new JoinLeaveListener(), this);
+
+        getCommand("god").setExecutor(new GodCommand());
+        getCommand("feed").setExecutor(new FeedCommand());
+
+        getConfig().options().copyDefaults();
+        saveDefaultConfig();
     }
 
     @Override

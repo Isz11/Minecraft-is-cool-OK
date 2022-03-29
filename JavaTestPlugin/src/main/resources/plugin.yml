@@ -4,3 +4,10 @@ main: me.isz.javatest.JavaTest
 api-version: 1.18
 authors: [ Isz ]
 description: plugin for testing purposes
+commands:
+  god:
+    description: Become invincible
+    usage: /<command>
+  feed:
+    description: refill your hunger
+    usage: /<command>
