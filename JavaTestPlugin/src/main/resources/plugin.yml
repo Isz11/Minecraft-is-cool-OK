@@ -11,3 +11,9 @@ commands:
   feed:
     description: refill your hunger
     usage: /<command>
+  sendword:
+    description: send a word
+    usage: /<command>
+  kill:
+    description: kills a player
+    usage: /<command>
