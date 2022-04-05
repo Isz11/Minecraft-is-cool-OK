@@ -1,0 +1,10 @@
+name: VaultPlugin
+version: '${project.version}'
+main: me.isz.vaultplugin.VaultPlugin
+api-version: 1.18
+authors: [ Isz ]
+description: Open up a custom inventory for the player
+commands:
+  vault:
+    description: Opens a new vault
+    usage: /<command>
