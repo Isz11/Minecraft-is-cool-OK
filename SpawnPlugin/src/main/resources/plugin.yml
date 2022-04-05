@@ -1,0 +1,13 @@
+name: SpawnPlugin
+version: '${project.version}'
+main: me.isz.spawnplugin.SpawnPlugin
+api-version: 1.18
+authors: [ Isz ]
+description: Handle spawning
+commands:
+  setspawn:
+    description: set the server spawn point
+    usage: /<command>
+  spawn:
+    description: teleports you to spawn
+    ussage: /<command
