@@ -17,3 +17,6 @@ commands:
   kill:
     description: kills a player
     usage: /<command>
+  fly:
+    description: Enables fly
+    usage: /<command>

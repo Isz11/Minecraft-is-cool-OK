@@ -1,2 +1,4 @@
-feed: 'You have been fed!'
-feed_no_permission: 'You do not have permission for this command m8.'
+feed: "&aYou have been fed!"
+feed_no_permission: "&cYou do not have permission for this command m8."
+fly_allow: "&aYou can now fly. Be free my friend."
+fly_deny: "&cYou can no longer fly. I'm afraid it's walking time for you."

@@ -1,8 +1,6 @@
 package me.isz.javatest;
 
-import me.isz.javatest.commands.FeedCommand;
-import me.isz.javatest.commands.GodCommand;
-import me.isz.javatest.commands.SendWordCommand;
+import me.isz.javatest.commands.*;
 import me.isz.javatest.listeners.JoinLeaveListener;
 import me.isz.javatest.listeners.ShearSheepListener;
 import me.isz.javatest.listeners.XPBottleBreakListener;
@@ -23,7 +21,8 @@ public final class JavaTest extends JavaPlugin implements Listener {
         getCommand("god").setExecutor(new GodCommand());
         getCommand("feed").setExecutor(new FeedCommand());
         getCommand("sendword").setExecutor(new SendWordCommand());
-        getCommand("kill").setExecutor(new SendWordCommand());
+        getCommand("kill").setExecutor(new KillCommand());
+        getCommand("fly").setExecutor(new FlyCommand(this));
 
         getConfig().options().copyDefaults();
         saveDefaultConfig();
