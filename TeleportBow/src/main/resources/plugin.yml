@@ -1,0 +1,10 @@
+name: TeleportBow
+version: '${project.version}'
+main: me.isz.teleportbow.TeleportBow
+api-version: 1.18
+authors: [ Isz ]
+description: Teleports you to wherever the arrow lands
+commands:
+  tpbow:
+    description: Gives you the teleport bow
+    usage: /<command>
