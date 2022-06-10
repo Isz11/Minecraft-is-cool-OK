@@ -1,0 +1,4 @@
+name: QuestTracker
+version: '${project.version}'
+main: me.isz.questtracker.QuestTracker
+api-version: 1.18
